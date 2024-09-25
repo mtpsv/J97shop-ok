@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Thương mại điện tử</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Trang Web Thương mại điện tử</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#wishlist">Danh sách yêu thích</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+            <button id="search-button">Tìm kiếm</button>
+            <div id="filter-options">
+                <!-- Các tùy chọn lọc sẽ được thêm bằng JavaScript -->
+            </div>
+        </section>
+
+        <section id="product-list">
+            <!-- Danh sách sản phẩm sẽ được thêm bằng JavaScript -->
+        </section>
+
+        <section id="product-details" style="display: none;">
+            <!-- Chi tiết sản phẩm sẽ được hiển thị ở đây -->
+        </section>
+
+        <section id="compare-products" style="display: none;">
+            <!-- Phần so sánh sản phẩm sẽ được hiển thị ở đây -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trang Web Thương mại điện tử. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/product-details.js"></script>
+    <script src="scripts/compare.js"></script>
+    <script src="scripts/wishlist.js"></script>
+    <script src="scripts/image-zoom.js"></script>
+</body>
+</html>
