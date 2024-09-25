@@ -48,6 +48,8 @@ main {
   cursor: pointer;
 }
 
+/* Sửa danh sách sản phẩm ở đây ạ */
+
 #product-list {
   display: flex;
   flex-wrap: wrap;
@@ -57,14 +59,39 @@ main {
 .product-item {
   border: 1px solid #ddd;
   padding: 10px;
-  width: calc(33.33% - 20px);
+  width: calc(25% - 20px);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-item img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Chiều rộng bằng 100% khung chứa */
+  height: auto; /* Giữ tỷ lệ ảnh gốc */
+  object-fit: cover; /* Giúp ảnh lấp đầy khung mà không làm méo hình */
 }
+
+.product-item .image-container {
+  width: 100%;
+  padding-top: 100%; /* Padding 100% tạo tỷ lệ vuông cho khung ảnh */
+  position: relative;
+}
+
+.product-item .image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Thu nhỏ ảnh để phù hợp với khung mà không cắt */
+  object-position: center; /* Đảm bảo ảnh nằm ở trung tâm */
+}
+
+.product-info {
+  margin-top: auto; /* Đẩy phần thông tin xuống dưới */
+}
+
+
 
 footer {
   background-color: #333;

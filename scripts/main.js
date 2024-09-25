@@ -15,15 +15,20 @@ function displayProducts(productsToShow = products) {
       const productElement = document.createElement('div');
       productElement.classList.add('product-item');
       productElement.innerHTML = `
-          <img src="${product.image}" alt="${product.name}">
-          <h3>${product.name}</h3>
-          <p>Giá: ${product.price.toLocaleString('vi-VN')} VNĐ</p>
-          <button onclick="showProductDetails(${product.id})">Xem chi tiết</button>
-          <button onclick="addToWishlist(${product.id})">Thêm vào yêu thích</button>
+          <div class="image-container">
+            <img src="${product.image}" alt="${product.name}">
+          </div>
+          <div class="product-info">
+              <h3>${product.name}</h3>
+              <p>Giá: ${product.price.toLocaleString('vi-VN')} VNĐ</p>
+              <button onclick="showProductDetails(${product.id})">Xem chi tiết</button>
+              <button onclick="addToWishlist(${product.id})">Thêm vào yêu thích</button>
+          </div>
       `;
       productList.appendChild(productElement);
   });
 }
+
 
 // Khởi tạo trang web
 function initializeWebsite() {
