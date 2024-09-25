@@ -1,0 +1,103 @@
+.wishlist-banner {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.wishlist-banner.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -40%);
+}
+
+.wishlist-banner.hide {
+  opacity: 0;
+  transform: translate(-50%, -60%);
+}
+
+.wishlist-content {
+  padding: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#wishlistItems {
+  list-style-type: none;
+  padding: 0;
+}
+
+#wishlistItems li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.wishlist-index {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.wishlist-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: contain; /* Thu nhỏ ảnh để phù hợp với khung mà không cắt */
+  object-position: center; /* Đảm bảo ảnh nằm ở trung tâm */
+}
+
+.wishlist-details {
+  flex-grow: 1;
+}
+
+.wishlist-details h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.wishlist-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+#wishlistItems li button {
+  background-color: #cc3333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#wishlistItems li button:hover {
+  background-color: #aa2222;
+}
