@@ -1,8 +1,8 @@
 // Dữ liệu sản phẩm mẫu
 const products = [
-  { id: 1, name: "Sản phẩm 1", price: 100000, image: "images/product1.jpg", description: "Mô tả sản phẩm 1" },
-  { id: 2, name: "Sản phẩm 2", price: 200000, image: "images/product2.jpg", description: "Mô tả sản phẩm 2" },
-  { id: 3, name: "Sản phẩm 3", price: 300000, image: "images/product3.jpg", description: "Mô tả sản phẩm 3" },
+  { id: 1, name: "Đồng hồ siêu đẹp", price: 100000, image: "images/Watch1.jpg", description: "Mô tả sản phẩm 1" },
+  { id: 2, name: "Apple Watch vô giá", price: 200000, image: "images/Watch2.jpg", description: "Mô tả sản phẩm 2" },
+  { id: 3, name: "Đồng hồ rẻ tiền", price: 300000, image: "images/Watch3.jpg", description: "Mô tả sản phẩm 3" },
 ];
 
 // Hiển thị danh sách sản phẩm
