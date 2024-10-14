@@ -102,3 +102,24 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+
+/* Không tìm thấy sản phẩm trong MAIN.JS */
+
+.no-results {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.no-results img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.no-results p {
+  font-size: 18px;
+  color: #666;
+}
