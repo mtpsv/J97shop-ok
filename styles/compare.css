@@ -1,0 +1,126 @@
+.compare-modal {  
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.compare-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.compare-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -60%); /* Bắt đầu từ vị trí này */
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none; /* Thêm dòng này */
+}
+
+.compare-modal.active {
+  display: block;
+}
+
+.compare-modal.active .compare-overlay {
+  opacity: 1;
+}
+
+.compare-modal.active .compare-content {
+  opacity: 1;
+  transform: translate(-50%, -50%); /* Di chuyển đến vị trí giữa */
+}
+
+/* Khi đóng modal */
+.compare-modal.closing .compare-content {
+  opacity: 0;
+  transform: translate(-50%, -60%); /* Di chuyển lên trên khi đóng */
+}
+
+.compare-modal.closing .compare-overlay {
+  opacity: 0;
+}
+
+.compare-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.compare-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0 5px;
+  transition: color 0.2s ease;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.compare-body {
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 12px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+.compare-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  width: 150px;
+}
+
+.product-column {
+  width: calc((100% - 150px) / 2);
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.highlight {
+  background-color: #e3f2fd;
+}

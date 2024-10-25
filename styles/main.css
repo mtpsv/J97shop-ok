@@ -48,7 +48,15 @@ main {
   cursor: pointer;
 }
 
-/* Sửa danh sách sản phẩm ở đây ạ */
+.button3in1{
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sửa danh sách sản phẩm ở đây */
 
 #product-list {
   display: flex;

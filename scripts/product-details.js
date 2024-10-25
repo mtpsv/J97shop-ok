@@ -30,8 +30,8 @@ function showProductDetails(productId) {
                 <h3>Đánh giá của khách hàng</h3>
                 <p>Chưa có đánh giá nào.</p>
             </div>
-            <button onclick="addToWishlist(${product.id})">Thêm vào yêu thích</button>
-            <button onclick="compareProduct(${product.id})">So sánh</button>
+            <button class="button3in1" onclick="addToWishlist(${product.id})">Thêm vào yêu thích</button>
+            <button class="button3in1" onclick="compareProduct(${product.id})">So sánh</button>
         `;
     
         productDetailsBanner.style.display = 'block';

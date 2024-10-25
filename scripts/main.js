@@ -4,8 +4,10 @@ const products = [
   { id: 2, category: "Đồng hồ", name: "Đồng hồ 🍎", price: 200000, image: "images/Watch2.jpg", description: "Đồng hồ app" },
   { id: 3, category: "Đồng hồ", name: "Đồng hồ ABC", price: 300000, image: "images/Watch3.jpg", description: "Đồng hồ abc...." },
   { id: 4, category: "Khác", name: "Lightstick J97", price: 1997000, image: "images/lightstickj97.jpg", description: "???" },
-  { id: 5, category: "Điện thoại", name: "Điện thoại xxx", price: 5000000, image: "images/iphone16promax-1tb.jpg", description: "Điện thoại thông minh...." },
-  { id: 6, category: "Điện thoại", name: "Điện thoại cơ bản ABC", price: 500000, image: "images/phone2.jpg", description: "Điện thoại an🥒" },
+  { id: 5, category: "Điện thoại", name: "Điện thoại xxx", price: 5000000, image: "images/phone1.webp", description: "Điện thoại thông minh...." },
+  { id: 6, category: "Điện thoại", name: "Điện thoại cơ bản ABC", price: 500000, image: "images/phone2.webp", description: "Điện thoại an🥒" },
+  { id: 7, category: "Cây", name: "Cây AĂÂ", price: 200000, image: "images/cay1.jpg", description: "Cây cảnh đẹp" },
+  { id: 8, category: "Cây", name: "Cây OÔƠ", price: 400000, image: "images/cay2.jpg", description: "Cây cảnh đẹp bình thường" }
 ];
 
 // Hiển thị danh sách sản phẩm
@@ -35,9 +37,9 @@ function displayProducts(productsToShow = products) {
           <h3>${product.name}</h3>
           <p>Giá: ${product.price.toLocaleString('vi-VN')} VNĐ</p>
           <p>Loại: ${product.category}</p>
-          <button onclick="showProductDetails(${product.id})">Xem chi tiết</button>
-          <button onclick="addToWishlist(${product.id})">Thêm vào yêu thích</button>
-          <button onclick="compareProduct(${product.id})">So sánh</button>
+          <button class="button3in1" onclick="showProductDetails(${product.id})">Xem chi tiết</button>
+          <button class="button3in1" onclick="addToWishlist(${product.id})">Thêm vào yêu thích</button>
+          <button class="button3in1" onclick="compareProduct(${product.id})">So sánh</button>
         </div>
       `;
       productList.appendChild(productElement);
